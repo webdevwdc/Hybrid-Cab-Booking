@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-tts",
+        "scope": null,
+        "escapedName": "cordova-plugin-tts",
+        "name": "cordova-plugin-tts",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/home/webskitters/Projects/Kingo/node_modules"
+    ]
+  ],
+  "_from": "cordova-plugin-tts@latest",
+  "_id": "cordova-plugin-tts@0.2.3",
+  "_inCache": true,
+  "_location": "/cordova-plugin-tts",
+  "_nodeVersion": "4.0.0",
+  "_npmUser": {
+    "name": "vilic",
+    "email": "i@vilic.info"
+  },
+  "_npmVersion": "2.14.2",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-tts",
+    "scope": null,
+    "escapedName": "cordova-plugin-tts",
+    "name": "cordova-plugin-tts",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-tts/-/cordova-plugin-tts-0.2.3.tgz",
+  "_shasum": "c5743f6c6f251e8cb4bc45dd33d41a9a22997287",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-tts",
+  "_where": "/home/webskitters/Projects/Kingo/node_modules",
+  "author": {
+    "name": "VILIC VANE"
+  },
+  "bugs": {
+    "url": "https://github.com/vilic/cordova-plugin-tts/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-tts",
+    "platforms": [
+      "ios",
+      "wp8",
+      "android"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova Text-to-Speech Plugin",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "c5743f6c6f251e8cb4bc45dd33d41a9a22997287",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-tts/-/cordova-plugin-tts-0.2.3.tgz"
+  },
+  "gitHead": "193b7d40d7615ad641dcf5298e1ea729d01b8674",
+  "homepage": "https://github.com/vilic/cordova-plugin-tts#readme",
+  "keywords": [
+    "cordova",
+    "tts",
+    "text-to-speech",
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-wp8",
+    "cordova-android"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "vilic",
+      "email": "i@vilic.info"
+    }
+  ],
+  "name": "cordova-plugin-tts",
+  "optionalDependencies": {},
+  "readme": "# Cordova Text-to-Speech Plugin\r\n\r\n## Platforms\r\n\r\niOS 7+  \r\nWindows Phone 8  \r\nAndroid 4.0.3+ (API Level 15+)\r\n\r\n## Installation\r\n\r\n```sh\r\ncordova plugin add cordova-plugin-tts\r\n```\r\n\r\n## Usage\r\n\r\n```javascript\r\n// basic usage\r\nTTS\r\n    .speak('hello, world!', function () {\r\n        alert('success');\r\n    }, function (reason) {\r\n        alert(reason);\r\n    });\r\n\r\n// or with more options\r\nTTS\r\n    .speak({\r\n        text: 'hello, world!',\r\n        locale: 'en-GB',\r\n        rate: 0.75\r\n    }, function () {\r\n        alert('success');\r\n    }, function (reason) {\r\n        alert(reason);\r\n    });\r\n```\r\n\r\n**Tips:** `speak` an empty string to interrupt.\r\n\r\n## API Definitions\r\n\r\nThe `onfulfilled` callback will be called when the speech finishes,\r\nand the `onrejected` callback (Windows Phone only) will be called when an error occurs.\r\n\r\nIf the API is invoked when it's still speaking, the previous speaking will be canceled immediately,\r\nbut the `onfulfilled` callback of the previous speaking will be called when it stops.\r\n\r\n```typescript\r\ndeclare module TTS {\r\n    interface IOptions {\r\n        /** text to speak */\r\n        text: string;\r\n        /** a string like 'en-US', 'zh-CN', etc */\r\n        locale?: string;\r\n        /** speed rate, 0 ~ 1 */\r\n        rate?: number;\r\n    }\r\n\r\n    function speak(options: IOptions, onfulfilled: () => void, onrejected: (reason) => void): void;\r\n    function speak(text: string, onfulfilled: () => void, onrejected: (reason) => void): void;\r\n}\r\n```\r\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vilic/cordova-plugin-tts.git"
+  },
+  "scripts": {},
+  "version": "0.2.3"
+}

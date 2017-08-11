@@ -1,0 +1,42 @@
+<ion-view view-title="Registration" align-title="left">
+    <ion-content style="background: url(img/login.jpg) center; background-size: cover;">
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>Thronester</h1>
+            </div>
+        </div>
+        <form name="registerForm" ng-submit="submitForm()" novalidate>
+            <div class="list">
+                <ion-md-input placeholder="First Name" highlight-color="balanced" type="text" ng-model="user.firstName" required ng-minlength="3"
+                    name="firstName" ng-pattern="/^[a-zA-Z\s]*$/"></ion-md-input>
+
+                <p class="error" ng-show="registerForm.firstName.$invalid && !registerForm.firstName.$pristine">First Name is required.</p>
+                <ion-md-input placeholder="Last Name" highlight-color="energized" type="text" ng-model="user.lastName" ng-minlength="3" name="lastName"
+                    ng-pattern="/^[a-zA-Z\s]*$/"></ion-md-input>
+                <p class="error" ng-show="loginForm.lastName.$invalid && !loginForm.lastName.$pristine">Last Name can only contain alphabets</p>
+
+
+                <ion-md-input placeholder="Email" highlight-color="energized" type="text" ng-model="user.email" name="email" ng-pattern="/^[a-z]+[a-z0-9._]+@[a-z]+\.[a-z.]{2,5}$/"></ion-md-input>
+                <p class="error" ng-show="loginForm.email.$invalid && !loginForm.email.$pristine">Email is required.</p>
+
+                 <p class="error" ng-show="loginForm.email.$error.pattern" >Please give a valid email.</p>
+                <ion-md-input placeholder="Phone Number" highlight-color="energized" type="text" ng-model="user.phone" name="phone"></ion-md-input>
+                <p class="error" ng-show="loginForm.phone.$invalid && !loginForm.phone.$pristine">Phone Number is required.</p>
+
+                <ion-md-input placeholder="Password" highlight-color="energized" type="{{type}}" ng-model="user.password" ng-minlength="3"
+                    name="password"></ion-md-input>
+                <p class="error" ng-show="loginForm.password.$invalid && !loginForm.password.$pristine">Password is required.</p>
+            </div>
+            <div class="padding">
+                <button type="submit" class="button button-full button-assertive ink" ng-disabled="loginForm.$invalid"> Register</button>
+            </div>
+        </form>
+
+        <div class="button-bar social-login">
+            <button class="button button-small button-border icon-left ion-social-google button-assertive-900">Google+</button>
+            <button class="button button-small button-border icon-left ion-social-twitter button-calm-900">Twitter</button>
+            <button class="button button-small button-border icon-left ion-social-facebook button-positive-900">Facebook</button>
+        </div>
+    </ion-content>
+</ion-view>

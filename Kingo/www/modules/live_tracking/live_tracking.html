@@ -1,0 +1,27 @@
+<ion-view view-title="Live Tracking">
+    <ion-content>
+      <ion-refresher on-refresh="doRefresh()"></ion-refresher>
+   
+        <div id="tools">start:
+            <input type="text" name="start" id="start" value="union square, NY" />end:
+            <input type="text" name="end" id="end" value="times square, NY" />
+            <button type="button" ng-click="startTracking()">Start Tracking</button>
+            <!-- <button type="button" ng-click="stopTracking()">Stop Tracking</button>
+            <button type="button" ng-click="resumeTracking()">Resume Tracking </button> -->
+        </div>
+
+        <div id="map_canvas" style="width:100%;height:500px;"></div>
+    </ion-content>
+</ion-view>
+
+<style>
+    html {
+        height: 100%;
+    }
+
+    body {
+        height: 100%;
+        margin: 0px;
+        font-family: Helvetica, Arial;
+    }
+</style>

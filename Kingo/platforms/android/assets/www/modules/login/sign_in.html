@@ -1,0 +1,54 @@
+<ion-view view-title="Login" align-title="left">
+    <ion-content style="background: url(img/login.jpg) center; background-size: cover;" class="animate-ripple" >
+        <div class="hero no-header flat">
+            <div class="content">
+                <div class="app-icon"></div>
+                <h1>Kingo</h1>
+            </div>
+        </div>
+        <form name="loginForm" ng-submit="submitForm()" novalidate >
+            <div class="list">
+                <ion-md-input placeholder="Email or Phone" highlight-color="balanced" type="text" ng-model="user.emailPh" required ng-minlength="3"
+                    name="emailPh"></ion-md-input>
+                <p class="error" ng-show="loginForm.emailPh.$invalid && !loginForm.emailPh.$pristine">Either Email or Phone is required.</p>
+                <ion-md-input placeholder="Password" highlight-color="energized" type="password" ng-model="user.password" required></ion-md-input>
+                <p class="error" ng-show="loginForm.password.$invalid && !loginForm.password.$pristine">Password is required.</p>
+            </div>
+            <div class="padding">
+                <button type="submit" class="button button-full button-assertive ink" ng-disabled="loginForm.$invalid"> Login</button>
+            </div>
+
+        </form>
+
+        <div class="button-bar social-login">
+            <button class="button button-small button-border icon-left ion-social-google button-assertive-900 " >Google+</button>
+            <button class="button button-small button-border icon-left ion-social-twitter button-calm-900">Twitter</button>
+            <button class="button button-small button-border icon-left ion-social-facebook button-positive-900" ng-click="facebookSignIn()">Facebook</button>
+        </div>
+
+        <!-- <div class="list animate-fade-slide-in-right">
+            <div class="item card item-text-wrap">
+                <ul>
+                    <li>
+                        Hello
+                    </li>
+                    <li>
+                        Hello
+                    </li>
+                    <li>
+                        Hello
+                    </li>
+                    <li>
+                        Hello
+                    </li>
+                    <li>
+                        Hello
+                    </li>
+                    <li>
+                        Hello
+                    </li>
+                </ul>
+            </div>
+        </div> -->
+    </ion-content>
+</ion-view>

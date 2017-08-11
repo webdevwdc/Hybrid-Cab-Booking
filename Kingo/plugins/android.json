@@ -1,0 +1,49 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-console": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        },
+        "cordova-plugin-splashscreen": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        },
+        "cordova-plugin-statusbar": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        },
+        "cordova-plugin-tts": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        },
+        "ionic-plugin-keyboard": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        },
+        "phonegap-plugin-push": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.ionic.kingo"
+        }
+    }
+}

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "418386852395",
+    "firebase_url": "https://kingo-cab.firebaseio.com",
+    "project_id": "kingo-cab",
+    "storage_bucket": "kingo-cab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:418386852395:android:84c28dca8784da50",
+        "android_client_info": {
+          "package_name": "com.ionic.kingo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "418386852395-sclvgk5s6v2a0tu1n5fuacs7gmrnvnl9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0qFM012ZcKmb2R3djyAGfyCXFU7FOZhU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

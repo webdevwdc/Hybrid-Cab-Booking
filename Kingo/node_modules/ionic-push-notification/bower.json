@@ -1,0 +1,32 @@
+{
+  "name": "ionic-push-notification",
+  "version": "1.0.0",
+  "homepage": "https://github.com/ArnaudSpanneut/ionic-pushNotification",
+  "authors": [
+    "ArnaudSpanneut <arnaud.spanneut@gmail.com>"
+  ],
+  "description": "Simple wrapper for NgCordova push Notification",
+  "main": "dist/ionic-pushNotification.js",
+  "keywords": [
+    "angular",
+    "ionic",
+    "push",
+    "notification",
+    "ngCordova"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "ionic": "~1.1.0",
+    "angular-mocks": "~1.4.3"
+  },
+  "resolutions": {
+    "angular": "1.4.3"
+  }
+}
